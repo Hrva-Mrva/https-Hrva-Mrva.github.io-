@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="hr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>H Travels — Otputujte s nama</title>
+  <meta name="description" content="H Travels — prilagođeni izleti, lokalni vodiči i nezaboravna iskustva." />
+  <link rel="icon" href="assets/favicon.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#"><img src="assets/logo.png" alt="H Travels logo" class="logo" /></a>
+      <button id="nav-toggle" class="nav-toggle" aria-label="Prikaži navigaciju">☰</button>
+      <nav id="main-nav" class="nav" aria-label="Glavna navigacija">
+        <a href="#home">Početna</a>
+        <a href="#destinations">Destinacije</a>
+        <a href="#services">Usluge</a>
+        <a href="#about">O nama</a>
+        <a href="#contact" class="btn btn-primary">Kontakt</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <h1 id="hero-title">Istražite svijet s H Travels</h1>
+          <p class="lead">Prilagođeni itinerari, lokalni vodiči i pažljivo odabrana iskustva. Pronađite svoju sljedeću avanturu.</p>
+          <div class="hero-ctas">
+            <a href="#destinations" class="btn btn-primary">Pogledaj destinacije</a>
+            <a href="#contact" class="btn btn-outline">Zatraži ponudu</a>
+          </div>
+        </div>
+        <div class="hero-image" aria-hidden="true">
+          <img src="assets/hero.jpg" alt="Pogled na odredište — more i planine" />
+        </div>
+      </div>
+    </section>
+
+    <section id="destinations" class="section" aria-labelledby="destinations-title">
+      <div class="container">
+        <h2 id="destinations-title">Popularne destinacije</h2>
+        <p class="muted">Ručno odabrana mjesta za svaki tip putnika.</p>
+        <div class="cards">
+          <article class="card">
+            <img src="assets/destination1.jpg" alt="Plaža u Baliju">
+            <h3>Bali, Indonezija</h3>
+            <p>Plaže, kultura i wellness retreati.</p>
+            <a class="card-link" href="#contact">Rezerviraj</a>
+          </article>
+          <article class="card">
+            <img src="assets/destination2.jpg" alt="Ulice Lisabona">
+            <h3>Lisabon, Portugal</h3>
+            <p>Povijesne ulice, gastronomske ture i obala.</p>
+            <a class="card-link" href="#contact">Rezerviraj</a>
+          </article>
+          <article class="card">
+            <img src="assets/destination3.jpg" alt="Hramovi u Kyotu">
+            <h3>Kyoto, Japan</h3>
+            <p>Hramovi, vrtovi i sezonska ljepota.</p>
+            <a class="card-link" href="#contact">Rezerviraj</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section alt-bg" aria-labelledby="services-title">
+      <div class="container">
+        <h2 id="services-title">Naše usluge</h2>
+        <div class="grid-3">
+          <div class="feature">
+            <h3>Prilagođeni itinerari</h3>
+            <p>Plan putovanja skrojen prema vašim interesima i tempu.</p>
+          </div>
+          <div class="feature">
+            <h3>Lokalni vodiči</h3>
+            <p>Iskusni vodiči koji poznaju skrivene dragulje destinacije.</p>
+          </div>
+          <div class="feature">
+            <h3>Podrška 24/7</h3>
+            <p>Timska podrška tijekom puta kako biste putovali bez brige.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section" aria-labelledby="about-title">
+      <div class="container">
+        <h2 id="about-title">O H Travels</h2>
+        <p>H Travels je mali tim putničkih stručnjaka usmjeren na stvaranje održivih i autentičnih putovanja. Suradnja s lokalnim poslodavcima omogućuje iskustva koja pozitivno utječu na zajednice koje posjećujemo.</p>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section" aria-labelledby="contact-title">
+      <div class="container contact-grid">
+        <div class="contact-info">
+          <h2 id="contact-title">Kontakt</h2>
+          <p class="muted">Recite nam gdje želite ići i pripremit ćemo ponudu.</p>
+          <ul class="contact-list">
+            <li>Agent: Hrvoje Jelić</li>
+            <li>Email: <a href="mailto:jelichrvoje11@gmail.com">jelichrvoje11@gmail.com</a></li>
+            <li>Telefon: +385 99 123 4567</li>
+            <li>Adresa: Split, Viška 12</li>
+          </ul>
+          <div class="socials" aria-hidden="false">
+            <a href="#" aria-label="Instagram">Instagram</a> · <a href="#" aria-label="Facebook">Facebook</a>
+          </div>
+        </div>
+
+        <form id="contact-form" class="contact-form" action="mailto:jelichrvoje11@gmail.com" method="post" enctype="text/plain" aria-label="Kontakt obrazac">
+          <label>
+            Vaše ime
+            <input type="text" name="name" id="name" required>
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" id="email" required>
+          </label>
+          <label>
+            Destinacija / Napomena
+            <textarea name="message" id="message" rows="5" required></textarea>
+          </label>
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary">Pošalji</button>
+            <button type="button" id="request-quote" class="btn btn-outline">Zatraži ponudu</button>
+          </div>
+          <p class="form-note muted">Napomena: za produkciju zamijenite mailto obrazac s backend rješenjem (Formspree, Netlify Forms ili serverless endpoint).</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> H Travels — Sva prava pridržana.</p>
+      <nav class="footer-nav" aria-label="Navigacija podnožja">
+        <a href="#privacy">Privatnost</a>
+        <a href="#terms">Uvjeti</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>
